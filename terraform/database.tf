@@ -4,7 +4,7 @@ resource "aws_db_subnet_group" "mc_db_subnet_group" {
   description = "Subnet group for the PostgreSQL RDS instance"
 }
 
-resource "aws_db_instance" "ge_db_instance" {
+resource "aws_db_instance" "mc_db_instance" {
   identifier             = "mc-db"
   engine                 = "postgres"
   instance_class         = "db.t3.micro"
